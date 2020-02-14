@@ -1,0 +1,319 @@
+
+@media screen and  (max-width:998px){
+    .header__link{
+    margin-right: 35px;
+    } 
+}
+
+
+/* Menu
+========================*/
+@media screen and (max-width:976px){
+    body.lock{
+       overflow: hidden;
+   }
+   .header__body{
+       height: 50px;
+   }
+   .header__logo{
+       flex: 0 0 40px;
+   }
+   .header__burger{
+       display: block;
+       position: relative;
+       top: 0;
+       left: 0;
+       width: 30px;
+       height: 20px;
+   }
+   .header__burger span{
+       position: absolute;
+       background-color: #a14298;
+       left: 0;
+       width: 100%;
+       height: 2px;
+       top: 9px; 
+       transition: all 0.3s  ease 0s;
+   }
+   .header__burger:before,
+   .header__burger:after{
+       content:'';
+       background-color:#a14298;
+       position: absolute;
+       width: 100%;
+       height: 2px;
+       left: 0;
+       transition: all 0.3s  ease 0s;
+   }
+   .header__burger:before{
+       top: 0;
+   }
+   .header__burger.active span{
+       transform: scale(0);
+   }
+
+   .header__burger:after{
+       bottom:0;
+   }
+   .header__burger.active:before{
+       transform: rotate(45deg);
+       top: 9px;
+   }
+   .header__burger.active:after{
+       transform: rotate(-45deg);
+       bottom: 9px;
+   }
+   
+   .header__menu{
+        position: fixed;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color:#fff;
+        padding: 70px 0 0 0;
+        transition: all 0.3s  ease 0s;
+   }
+   .header__menu.active{
+       top: 0px;
+   }
+   .header__list{
+       display: block;
+   }
+   .header__list li {
+       margin: 0 0 20px 0;
+   }
+}   
+
+
+@media screen and (max-width:830px){
+/* Home
+========================*/
+.header__logo{
+    display: none;
+}
+.home_left{
+    width: 100%;
+    padding-bottom: 50px;
+}
+.home_right{
+    width: 0;
+
+}
+.title_logo{
+    display: none;
+}
+.home__inner{
+    margin: 0;
+    padding: 0 0 0 60px;
+}
+.home_logo{
+    display: block;
+}
+.home_logo-img{
+    position: absolute;
+    left: 55%;
+    top: 150px;
+    max-width: 250px;
+}
+
+.home__subtitle{
+    margin-top: 35px;
+    margin-bottom: 30px;
+}
+.home__title{
+    font-size: 35px;
+    line-height: 30px;
+}
+.home__title_two{
+    font-size: 38px;
+    font-weight: 400;
+    line-height: 30px;
+}
+.buttons{
+    margin-top: 45px;
+    margin-bottom: 50px;
+}
+.button__home{
+    font-size: 12px;
+}
+.list{
+    font-size: 14px;
+}
+/* About
+========================*/
+.about_us{
+    padding-top: 90px;
+}
+.about_title{
+    font-size: 24px;
+    margin-bottom: 21px;
+}
+.about_left{
+    width: 100%;
+}
+.about__inner{
+    max-width: 614px;
+}
+.about_right{
+    width: 0;
+    display: none;
+}
+.about_subtitle_two{
+    margin-top: 50px;
+}
+/* Adventages
+========================*/
+ .adventages{
+     padding-top: 90px;
+ }
+ .aventages_title{
+     font-size: 24px;
+     margin-bottom: 21px;
+ }
+ .adventages__inner{
+     max-width: 600px;
+ }
+ .adventages__item{
+     flex: 50%;
+     padding-bottom: 40px;
+     padding-left: 0px;
+ }
+ /* Team
+========================*/
+.team{
+    padding-top: 90px;
+}
+.team_title{
+      font-size: 24px;
+      margin-bottom: 50px;
+  }
+.slider{
+      max-width: 680px;
+  }
+  /* Portfolio
+========================*/
+.portfolio {
+    padding-top: 90px;
+}
+.portfolio__title{
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+.potfolio__inner{
+    max-width: 580px;
+}
+.potrfolio__item{
+    flex: 33%;
+}
+ /* Contact us 
+========================*/
+.contac_us{
+    padding-top: 90px;
+}
+.contact__title{
+    font-size: 24px;
+}
+.login__form{
+    max-width: 680px;
+    padding: 20px;
+    padding-right: 0;
+}
+.login__group{
+    width: 100%;
+    margin-top: 20px;
+}
+.notes{
+    max-width: 600px;
+
+}
+.button__form{
+    width: 100%;
+    max-width: 600px;
+}
+}
+@media screen and (max-width:650px){
+/* Home
+========================*/
+    .home_logo-img{
+        position: absolute;
+        left: 50%;
+        top: 150px;
+        max-width: 250px;
+    }
+
+}
+@media screen and (max-width:500px){
+    /* Home
+========================*/
+    .home_logo-img{
+    position: absolute;
+    top: 100px;
+    left: 60px;
+    max-width: 300px;
+}
+ /* Foooter
+========================*/
+.footer__inner{
+    font-size: 13px;
+    flex-wrap: wrap;
+    padding-top: 20px;
+}
+.footer__right,
+.footer__left{
+    width: 100%;
+}
+.footer__right{
+    padding-top: 20px;
+}
+    
+}
+
+@media screen and (max-width:400px){
+/* Home
+========================*/
+.social_media{
+    display: none;
+}
+.home__inner{
+    padding: 0 0 0 15px;
+}
+.home_logo-img{
+    width: 120px;
+    position: absolute;
+    top: 80px;
+    left: 60%;
+}
+.button__home{
+    padding: 10px 20px;
+
+}
+.list li{
+    padding-left: 0;
+
+}
+/*Team
+========================*/
+.item_name{
+    font-size: 12px;
+}
+.item__prof{
+    font-size: 13px;
+}
+/* Adventages
+========================*/
+.adventages__item{
+    flex: 100%;
+    padding-left: 20px;
+}
+/* Contact us 
+========================*/
+.login__form{
+    max-width: 300px;
+    padding: 10px;
+}
+.notes{
+    max-width: 250px;
+}
+}
